@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: color-pod
+  labels:
+    pod-template-hash: cc7ff6dff
+    type: front-end
+spec:
+  containers:
+    - image: kodekloud/webapp-color:v1
+      name: web-color-container

@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: myapp-replicaset
+  name: myapp-replicaset-1
   labels:
     app: myapp
     type: front-end
@@ -21,4 +21,4 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      type: front-end
+      app: myapp

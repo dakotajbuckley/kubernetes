@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: web-color-rs
+  labels:
+    app: web-color
+spec:
+  template:
+    metadata:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: web-color

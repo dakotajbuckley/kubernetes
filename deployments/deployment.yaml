@@ -4,18 +4,18 @@ metadata:
   name: myapp-deployment
   labels:
     app: myapp
-    type: front-end
 spec:
   template:
 
     metadata:
+      name: myapp-pod
       labels:
         app: myapp
         type: front-end
     spec:
       containers:
         - name: nginx-container
-          image: kodekloud/webapp-color:v2323
+          image: kodekloud/webapp-color:v1
   
   replicas: 3
   selector:
