@@ -7,6 +7,13 @@ metadata:
 spec:
   template:
     metadata:
+      name: hello
+      labels:
+        app: hello
+    spec:
+      containers:
+        - name: hello
+          image: nginx
   replicas: 3
   selector:
     matchLabels:
