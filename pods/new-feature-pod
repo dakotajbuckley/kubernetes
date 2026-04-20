@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: new-feature
+  labels:
+    app: backend
+spec:
+  conatiners:
+    - name: new-feature
+      image: postgres
